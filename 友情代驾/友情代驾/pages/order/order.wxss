@@ -1,0 +1,14 @@
+/* pages/order/order.wxss */
+page{background-color: #EDF2F6}
+.list{width: 94%;margin-left: 3%;height: 250rpx;background-color: white;margin-top: 30rpx;border-radius: 10rpx;}
+.top{width: 94%;margin-left: 3%;height: 80rpx;border-bottom: 1rpx solid #E2E2E2;line-height: 80rpx;}
+.time{margin-left: 20rpx;width: 50%;font-size: 28rpx;color: #8F8F8F;}
+.zhunagt{width: 33%;text-align: right;font-size: 29rpx;}
+.bottom{width: 94%;margin-left: 3%;height: 170rpx;}
+.bottom_left{width: 70%;}
+.bottom_list{width: 100%;height: 85rpx;line-height: 85rpx;color: #565656;font-size: 30rpx;}
+.botton_text{margin-left: 30rpx;}
+.bottom_right{width: 30%;}
+.right_yj{font-size: 26rpx;color: #AAAAAA;line-height: 60rpx;margin-top:20rpx;text-align: right;width: 100%;}
+.right_money{width: 100%;text-align: right;color:#059BFF;font-size: 26rpx;}
+.evaluate{width: 150rpx;font-size: 30rpx;color: #3493E2;border: 1rpx solid #3493E2;text-align: center;height:50rpx;line-height: 50rpx;margin-top: 10rpx;border-radius: 30rpx;margin-left: 50rpx;}

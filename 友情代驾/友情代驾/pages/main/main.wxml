@@ -1,0 +1,112 @@
+<!--pages/main/main.wxml-->
+<view class='top flex'>
+  <view class='top_img' bindtap='surr'>
+    <image src='../../img/hy.png' style='width:50rpx;margin-top:25rpx;margin-left:20rpx;' mode='widthFix'/>      
+  </view>
+  <view class='top_imgs {{ids==1?"on":""}}' id='1' bindtap='seclect'>代驾预约</view>
+  <view class='top_imgs {{ids==2?"on":""}}' id='2' bindtap='seclect'>在线商城</view>
+</view>
+<block wx:if='{{ids==1}}'>
+<map id="map" longitude="{{longitude}}" latitude="{{latitude}}" markers="{{markers}}" scale="20" show-location class='map' bindtap='map'></map>
+
+
+<view class='kang'>
+    <view class='title' wx:if='{{q4}}'>您附近有 12 位代驾人员</view>
+    <view class='title flex' wx:if='{{q3}}'>
+        <image src='../../img/yjjx-7.png' style='width:60rpx;margin-top:20rpx;margin-left:160rpx;' mode='widthFix'/>
+        <view style='margin-left:30rpx;' >预约多人代驾</view>
+    </view>
+    <view class='title flex' wx:if='{{q2}}'>
+        <image src='../../img/yjjx-7.png' style='width:60rpx;margin-top:20rpx;margin-left:160rpx;' mode='widthFix'/>
+        <view style='margin-left:30rpx;' >等待司机接单......</view>
+    </view>
+    <view class='time flex'>
+        <image src='../../img/sj-(1)_15.png' style='width:40rpx;margin-top:20rpx;margin-left:200rpx;' mode='widthFix'/>
+        <view style='margin-left:30rpx;'>预约时间 　></view>
+    </view>
+    <view class='start flex'>
+      <image src='../../img/qi_40 (1).png' style='width:50rpx;;margin-top:25rpx;margin-left:20rpx;' mode='widthFix'/>
+      <view class='text nowarp'>中信银行（成都锦江支行）</view>
+    </view>
+     <view class='start flex'>
+      <image src='../../img/qi_40 (2).png' style='width:50rpx;;margin-top:25rpx;margin-left:20rpx;' mode='widthFix'/>
+      <view class='text nowarp' style='color:#3FDAA2'>您要去哪儿？</view>
+    </view>
+    <view class='time flex' wx:if='{{s1}}' bindtap='qh'>
+        <image src='../../img/td.png' style='width:50rpx;margin-top:20rpx;margin-left:170rpx;' mode='widthFix'/>
+        <view style='margin-left:30rpx;' >预约多人代驾</view>
+    </view>
+     <view class='time flex' wx:if='{{s2}}'>
+        <view style='margin-left:20rpx;' class='duor' >需要代驾人数</view>
+        <view class='num flex'>
+          <view class='jj'>-</view>
+          <view class='jj'>2</view>
+          <view class='jj'>+</view>
+        </view>
+    </view>
+</view>
+
+<view class='button'>
+  <image src='../../img/dl (4).png' style='width:100%' wx:if='{{q1}}' mode='widthFix' bindtap='sure'/>
+  <image src='../../img/qx.png' style='width:100%' wx:if='{{q2}}' mode='widthFix' bindtap='qxsure'/>
+</view>
+
+</block>
+
+<block wx:if='{{ids==2}}'>
+    <view class='list flex'>
+        <view class='com_img'></view>
+        <view class='com_img right'>
+            <view class='com_name nowarp'>潮范运动裤</view>
+            <view class='com_bz nowarp'>运动时裤子的选择很重要,优势在于舒服</view>
+            <view class='com_bottom flex'>
+                <view class='com_money'>￥259.00</view>
+                <view class='com_money flex pp'>
+                  <view class='img_logo'>
+                    <image src='../../img/td.png' style='width:50rpx;margin-top:25rpx;' mode='widthFix'/>
+                  </view>
+                    <view class='pp_text'>京东商城</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>
+
+<!-- 弹窗 -->
+<block wx:if='{{sort}}'>
+<view class="bg"  bindtap='bindSorttap'></view>
+<view class="show" >
+    <view class='show_top flex'>
+      <!-- 头像 -->
+        <view class='show_top_img'></view>
+        <view class='show_right'>
+            <view class='show_name nowarp'>风信子的爱</view>
+            <view class='vip'>白金会员</view>
+        </view>
+    </view>
+    <view class='show_list flex' bindtap='order'>
+        <image src='../../img/54-Clipboard-text.png' style='margin-left:30rpx;width:35rpx;margin-top:35rpx;' mode='widthFix'/>
+        <view class='show_text'>我的订单</view>
+        <view class='show_num'></view>
+        <image src='../../img/fh.png' style='width:15rpx;margin-left:15rpx;margin-top:46rpx;' mode='widthFix'/>
+    </view>
+    <view class='show_list flex' bindtap='integral'>
+        <image src='../../img/85-Star.png' style='margin-left:30rpx;width:35rpx;margin-top:40rpx;' mode='widthFix'/>
+        <view class='show_text'>我的积分</view>
+        <view class='show_num'>500分</view>
+        <image src='../../img/fh.png' style='width:15rpx;margin-left:15rpx;margin-top:46rpx;' mode='widthFix'/>
+    </view>
+    <view class='show_list flex' bindtap='set_up'>
+        <image src='../../img/13-Settings.png' style='margin-left:30rpx;width:35rpx;margin-top:40rpx;' mode='widthFix'/>
+        <view class='show_text'>基本设置</view>
+        <view class='show_num'></view>
+        <image src='../../img/fh.png' style='width:15rpx;margin-left:15rpx;margin-top:46rpx;' mode='widthFix'/>
+    </view>
+    <view class='show_list flex'>
+        <image src='../../img/83-Heart.png' style='margin-left:30rpx;width:35rpx;margin-top:40rpx;' mode='widthFix'/>
+        <view class='show_text'>推荐有奖</view>
+        <view class='show_num'>分享优惠</view>
+        <image src='../../img/fh.png' style='width:15rpx;margin-left:15rpx;margin-top:46rpx;' mode='widthFix'/>
+    </view>
+</view>
+</block>

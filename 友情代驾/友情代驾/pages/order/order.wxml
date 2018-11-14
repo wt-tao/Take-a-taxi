@@ -1,0 +1,51 @@
+<!--pages/order/order.wxml-->
+<view class='list' bindtap='order_detail' id='1'>
+    <view class='top flex'>
+      <image src='../../img/sj-(1).png' style='width:50rpx;margin-top:15rpx;' mode='widthFix'/>
+      <view class='time'>上周六 23:25</view>
+      <view class='zhunagt' style='color:#FF7011'>进行中</view>
+      <image src='../../img/fh.png' style='margin-left:25rpx;margin-top:30rpx;width:14rpx;' mode='widthFix'/>
+    </view>
+    <view class='bottom flex'>
+        <view class='bottom_left'>
+            <view class='bottom_list flex nowarp'>
+                <image src='../../img/qi_40 (1).png' style='width:30rpx;margin-top:26rpx;' mode='widthFix'/>
+                <view class='botton_text'>天府大道3段23号</view>
+            </view>
+            <view class='bottom_list flex nowarp'>
+                <image src='../../img/qi_40 (2).png' style='width:30rpx;margin-top:26rpx;' mode='widthFix'/>
+                <view class='botton_text'>营门口路12号</view>
+            </view>
+        </view>
+        <view class='bottom_right'>
+            <view class='right_yj'>预计费用</view>
+            <view class='right_money'>￥<text style='font-size:40rpx;'> 108.00</text></view>
+        </view>
+    </view>
+</view>
+
+<view class='list'>
+    <view class='top flex'>
+      <image src='../../img/sj-(1).png' style='width:50rpx;margin-top:15rpx;' mode='widthFix'/>
+      <view class='time'>上周六 23:25</view>
+      <view class='zhunagt' style='color:#8F8F8F;'>已完成</view>
+      <image src='../../img/fh.png' style='margin-left:25rpx;margin-top:30rpx;width:14rpx;' mode='widthFix'/>
+    </view>
+    <view class='bottom flex'>
+        <view class='bottom_left'>
+            <view class='bottom_list flex nowarp'>
+                <image src='../../img/qi_40 (1).png' style='width:30rpx;margin-top:26rpx;' mode='widthFix'/>
+                <view class='botton_text'>天府大道3段23号</view>
+            </view>
+            <view class='bottom_list flex nowarp'>
+                <image src='../../img/qi_40 (2).png' style='width:30rpx;margin-top:26rpx;' mode='widthFix'/>
+                <view class='botton_text'>营门口路12号</view>
+            </view>
+        </view>
+        <view class='bottom_right'>
+            <!-- <view class='right_yj'>预计费用</view> -->
+            <view class='right_money'>￥<text style='font-size:40rpx;line-height: 85rpx;'> 56.00</text></view>
+            <view class='evaluate'>去评价</view>
+        </view>
+    </view>
+</view>

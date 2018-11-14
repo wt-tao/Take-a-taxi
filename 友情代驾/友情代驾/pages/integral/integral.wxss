@@ -1,0 +1,14 @@
+/* pages/integral/integral.wxss */
+page{background-color: #EDF2F6}
+.top{width: 100%;height: 200rpx;box-shadow: 3px 3px 10px #666;background-color: white;}
+.integral_title{width: 90%;line-height: 100rpx;font-size: 36rpx;font-weight: bolder;margin-left: 5%}
+.integral_text{width: 92%;margin-left: 5%;line-height: 100rpx;font-size: 30rpx;color: #3A3A3A}
+.integral_num{width: 60%;margin-left: 30rpx;}
+.integral_text_ts{font-size: 26rpx;color: #666666;width: 20%;text-align: right;}
+.list{margin-top: 40rpx;flex-wrap: wrap;width: 100%;}
+.list_com{width: 46.5%;margin-left: 2%;margin-top: 20rpx;height:150rpx;color: white;border-radius: 5rpx;}
+.money{width: 50%;border-top-left-radius: 5rpx;border-bottom-left-radius: 5rpx;}
+.price{font-size: 26rpx;text-align: center;}
+.list_integral{width: 50%;border-top-right-radius: 5rpx;border-bottom-right-radius: 5rpx;}
+.list_integral_num{width: 100%;text-align: center;font-size: 30rpx;margin-top:30rpx;}
+.ljdh{width: 90%;margin-left: 5%;text-align: center;height: 50rpx;line-height: 50rpx;color: #61532A;border-radius: 30rpx;font-size: 28rpx;margin-top:20rpx;background-color:#FFC600;}

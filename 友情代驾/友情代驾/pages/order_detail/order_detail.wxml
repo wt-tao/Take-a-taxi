@@ -1,0 +1,73 @@
+<!--pages/order_detail/order_detail.wxml-->
+<view class='detail'>
+    <view class='top flex'>
+        <view class='head_img'></view>
+        <view class='count'>
+            <view class='name nowarp'>测试帐号</view>
+            <view class='time nowarp'>今天 23.25</view>
+        </view>
+        <view class='right'>
+            <view class='right_order'>订单编号:6544641518</view>
+            <view class='money'>预估<text style='font-size:45rpx;'>￥ 89.00</text></view>
+        </view>
+    </view>
+    <view class='lc flex'>
+        <view class='lc_text'>里程</view>
+        <view class='number'>89.00</view>
+    </view>
+     <view class='lc flex' wx:if='{{s2}}'>
+        <view class='lc_text'>等候费</view>
+        <view class='number'>19.00</view>
+    </view>
+    <block wx:if='{{s1}}'>
+        <view class='yj_time'>司机预计到达时间：今天23：25</view>
+        <view class='botton flex'>
+            <view class='anniu' bindtap='submin'>提交订单</view>
+            <view class='anniu' style='background-color: white;border:1rpx solid #C2C2C2;color:#4A4A4A' bindtap='del'>取消订单</view>
+        </view>
+     </block>
+    <view class='hx'></view>
+</view>
+
+
+<!-- 弹窗1 -->
+<block wx:if='{{sort}}' >
+<view class="bg"  bindtap='bindSorttap'></view>
+<view class="show" >
+      <image src='../../img/tc-18.png' style='width:200rpx;margin-top:50rpx;margin-left:200rpx;' mode='widthFix'/>
+      <view class='del'>确认取消该订单吗？</view>
+      <view class='anniu_kang flex'>
+            <view class='annius' bindtap='bindSorttap'>我再想想</view>
+            <view class='annius' style='border:1rpx solid #FF9B04;color:#FF9B04'>确认取消</view>
+      </view>
+</view>
+</block>
+
+<!-- 弹窗2 -->
+<block wx:if='{{sort1}}' >
+<view class="bg"  bindtap='bindSorttap1'></view>
+<view class="show" style='width:90%;left:5%'>
+      <image src='../../img/pb.png' style='width:250rpx;margin-top:50rpx;margin-left:200rpx;' mode='widthFix'/>
+      <view class='del' style='color:#000000'>您的订单已确认，司机正在赶往约定地点！</view>
+      <view class='bindSorttap' bindtap='bindSorttap1'>好的</view>
+</view>
+</block>
+
+
+<!-- 评价 -->
+<view class='evalute' wx:if='{{s2}}'>
+    <view class='evalute_title'>评价本次服务</view>
+    <view class='xingx flex' bindtap="myStarChoose1">
+         <block wx:for="{{starMap}}">
+              <image wx:if="{{star1>=index+1}}" style="padding-right: 20rpx;width:50rpx;margin-top:30rpx;margin-left:30rpx;"  data-star="{{index+1}}" src='../../img/xz-2 (2).png'  mode='widthFix'/>
+              <image wx:if="{{star1<index+1}}" style="padding-right: 20rpx;width:50rpx;margin-top:30rpx;margin-left:30rpx;"  data-star="{{index+1}}" src='../../img/xz-2 (1).png' mode='widthFix'/>
+            </block>
+        <!-- <view class='xingx_list'></view> -->
+    </view>
+    <textarea placeholder='我想说...' placeholder-style='color:#B1B1B1;font-size:27rpx' class='textarea'></textarea>
+    <view class='sure'>
+        <view class='sure_bo'>
+            <image src='../../img/dl (7).png' style='width:100%' mode='widthFix'/>
+        </view>
+    </view>
+</view>

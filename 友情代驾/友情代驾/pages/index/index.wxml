@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class='rentou'>
+  <image src='../../img/r.png' style='width:100%' mode='widthFix'/>
+</view>
+<view class='list'>
+    <view class='com flex'>
+        <image src='../../img/r-(1).png' style='width:40rpx;margin-left:20rpx;margin-top:20rpx;' mode='widthFix'/>
+        <input class='input' />
+    </view>
+</view>
+<view class='list flex' style='margin-top:50rpx;'>
+    <view class='coms flex'>
+        <image src='../../img/mim.png' style='width:30rpx;margin-left:20rpx;margin-top:20rpx;' mode='widthFix'/>
+        <input class='inputs' />
+    </view>
+    <view class='yzm'>发送验证码</view>
+</view>
+<image src='../../img/dl (1).png' style='width:500rpx;margin-left:130rpx;margin-top:100rpx;' mode='widthFix' bindtap='login'/>
+<view class='text'>还不是会员？<text style='color:#FFA621' bindtap='register'>立即注册</text></view>
+
+<image src='../../img/tc-15.png' class='img' mode='widthFix'/>

@@ -1,0 +1,16 @@
+<!--pages/set_up/set_up.wxml-->
+<view class='list flex' style='border-top: 1rpx solid #F5F5F5;'>
+    <view class='name'>我的姓名</view>
+    <view class='userInfo'>测试帐号</view>
+    <image src='../../img/fh_74.png' style='width:14rpx;margin-left:30rpx;margin-top:50rpx;' mode='widthFix'/>
+</view>
+<view class='list flex' >
+    <view class='name'>手机号码</view>
+    <view class='userInfo'>12345678911</view>
+    <image src='../../img/fh_74.png' style='width:14rpx;margin-left:30rpx;margin-top:50rpx;' mode='widthFix'/>
+</view>
+<view class='list flex' >
+    <view class='name'>支付方式</view>
+    <view class='userInfo'>微信支付</view>
+    <!-- <image src='../../img/fh_74.png' style='width:14rpx;margin-left:30rpx;margin-top:40rpx;' mode='widthFix'/> -->
+</view>

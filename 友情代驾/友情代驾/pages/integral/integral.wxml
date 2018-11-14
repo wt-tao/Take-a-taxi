@@ -1,0 +1,35 @@
+<!--pages/integral/integral.wxml-->
+<view class='top'>
+    <view class='integral_title'>积分兑换</view>
+    <view class='integral_text flex'>
+        <image src='../../img/jf.png' style='width:60rpx;' mode='widthFix'/>
+        <view class='integral_num'>8900积分</view>
+        <view class='integral_text_ts'>积分规则</view>
+        <image src='../../img/fh.png' style='width:13rpx;margin-left:20rpx;margin-top:40rpx;' mode='widthFix'/>
+    </view>
+</view>
+
+<view class='list flex'>
+    <view class='list_com flex'>
+        <view class='money' style='background-color: #008BEC;'>
+            <view class='price'>￥<text style='font-size:80rpx;font-weight: bolder;'>5</text></view>
+            <view class='price'>满20可用</view>
+        </view>
+        <view class='list_integral' style='background-color: #22A4FF;'>
+            <view class='list_integral_num'>500积分</view>
+            <view class='ljdh' style=''>立即兑换</view>
+        </view>
+    </view>
+    <view class='list_com flex'>
+        <view class='money' style='background-color: #00D57D;'>
+            <view class='price'>￥<text style='font-size:80rpx;font-weight: bolder;'>10</text></view>
+            <view class='price'>满100可用</view>
+        </view>
+        <view class='list_integral' style='background-color: #00BA6D;'>
+            <view class='list_integral_num'>1200积分</view>
+            <view class='ljdh' style=''>立即兑换</view>
+        </view>
+    </view>
+    <!-- <view class='list_com'></view> -->
+    <view style='height:30rpx;width:100%'></view>
+</view>

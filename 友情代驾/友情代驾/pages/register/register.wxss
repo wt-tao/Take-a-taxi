@@ -1,0 +1,12 @@
+/**index.wxss**/
+.rentou{width: 30%;height: 250rpx;margin-left:35%;margin-top: 80rpx;display: flex;justify-content: center;align-items: center; }
+.list{width: 94%;margin-left: 3%;height: 80rpx;font-size: 28rpx;margin-top: 150rpx;}
+.com{width: 70%;margin-left: 15%;border: 1rpx solid #ECECEC;border-radius: 40rpx;height: 100%;}
+.input{width: 350rpx;height: 80rpx;margin-left: 50rpx;}
+.coms{width:40%; margin-left: 15%;border: 1rpx solid #ECECEC;border-radius: 40rpx;}
+.inputs{width: 150rpx ;height: 100%;margin-left: 50rpx;}
+.yzm{width: 25%;height: 80rpx;line-height: 80rpx;color: #4693F2;text-align: center;margin-left:30rpx;border-radius: 40rpx;background-color: #EAF8FE}
+.text{width: 100%;text-align: center;margin-top: 50rpx;font-size: 28rpx;color: #8C8C8C}
+.img{width: 100%;position: fixed;bottom: 0;}
+.ty{width: 100%;height: 80rpx;margin-top: 80rpx;line-height: 80rpx;}
+.ty_text{font-size: 28rpx;color: #7C7C7C;margin-left:20rpx;}

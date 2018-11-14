@@ -1,0 +1,8 @@
+/**app.wxss**/
+.flex{
+  display: flex;
+  flex-direction: row;
+}
+.nowarp{
+  text-overflow: ellipsis;overflow: hidden;white-space: nowrap;
+}
